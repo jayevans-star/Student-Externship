@@ -1,0 +1,14 @@
+.header {
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.logout-icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.btn-logout {
+    color: #000 !important;
+}
