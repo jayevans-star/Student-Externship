@@ -6,17 +6,17 @@ class Header extends React.Component{
     render() {
         return(
             <>
-                <Link className="btn-logout">
-                    <div className="header d-flex justify-content-between align-items-center">
-                        <div className="mx-5">
-                            <h2>I am a {this.props.role}</h2>
-                        </div>
+                <div className="header d-flex justify-content-between align-items-center">
+                    <div className="mx-5 font-speci">
+                        <h2>{this.props.role}</h2>
+                    </div>
+                    <Link className="btn-logout" to="/">
                         <div className="p-2 bd-highlight mr-5">To main page
                             <MdLogout className="logout-icon ml-2"/>
                         </div>
-                        
-                    </div>
-                </Link>
+                    </Link>
+
+                </div>
             </>
             
         )

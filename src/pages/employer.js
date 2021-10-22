@@ -2,7 +2,7 @@ import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
 import Header from "../layout/header";
 
-class StudentPage extends React.Component {
+class EmployerPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {show_verify: false};
@@ -15,12 +15,12 @@ class StudentPage extends React.Component {
     render() {
         return (
             <>
-            <Header role="This is a student."/>
+            <Header role="I am an employer."/>
             <MDBContainer className="mt-5 shadow-lg py-5">
                 <MDBRow>
                     <MDBCol md="6" >
                         <form className="px-4">
-                            <p className="h4 text-center mb-4">Student Register</p>
+                            <p className="h4 text-center mb-4">Employer Register</p>
                             <label htmlFor="defaultFormContactNameEx" className="grey-text">
                                 Your name
                             </label>
@@ -49,7 +49,7 @@ class StudentPage extends React.Component {
                         </form>
                     </MDBCol>
                     <MDBCol md="6" className="text-center">
-                            <img src="https://colorlib.com/etc/regform/colorlib-regform-7/images/signin-image.jpg"></img>
+                            <img src="https://colorlib.com/etc/regform/colorlib-regform-7/images/signup-image.jpg"></img>
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
@@ -58,4 +58,4 @@ class StudentPage extends React.Component {
     }
 } 
 
-export default StudentPage;
+export default EmployerPage;
