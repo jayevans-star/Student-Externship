@@ -1,0 +1,26 @@
+.display-4 {
+    font-family: cursive;
+}
+
+.card-img-box {
+    height: 120px;
+}
+.card-img-student {
+    height: 100px;
+    width: 100px;
+}
+
+.card-img-employer {
+    height: 130px;
+    width: 130px;
+}
+
+.card-img-school {
+    height: 110px;
+    width: 110px;
+}
+
+.card-name {
+    font-size: x-large !important;
+    color: black !important;
+}
