@@ -16,7 +16,7 @@ class StudentPage extends React.Component {
         return (
             <>
             <Header role="This is a student."/>
-            <MDBContainer className="mt-5 shadow-lg py-5">
+            <MDBContainer className="mt-5 shadow-lg py-5 student-reg-box">
                 <MDBRow>
                     <MDBCol md="6" >
                         <form className="px-4">

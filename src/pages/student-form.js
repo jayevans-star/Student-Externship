@@ -31,7 +31,7 @@ class StudentFormPage extends React.Component {
     render() {
         return (
             <>
-            <MDBContainer className="mt-5 shadow-lg py-5">
+            <MDBContainer className="mt-5 shadow-lg py-5 student-form-box">
                 <MDBRow>
                     <MDBCol md="6" >
                         <form className="px-4">

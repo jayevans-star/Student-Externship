@@ -1,3 +1,5 @@
 .verify-box {
     height: 600px;
+    background: linear-gradient(120deg, rgb(222, 172, 245) 0%, rgba(0, 0, 0, 0) 40%),white;
+
 }

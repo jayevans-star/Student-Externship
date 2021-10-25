@@ -11,3 +11,7 @@
   border-radius: 20px;
   background-size: 60px 60px;
 }
+
+.student-form-box {
+  background: linear-gradient(60deg, rgb(222, 172, 245) 0%, rgba(0, 0, 0, 0) 40%),white;
+}
