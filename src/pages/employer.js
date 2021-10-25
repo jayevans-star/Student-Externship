@@ -1,6 +1,11 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBAlert } from 'mdbreact';
 import Header from "../layout/header";
+import '../assets/css/employer.css';
+// import Toastr from '../components/toastr'    
+import { ToastContainer, toast } from 'react-toastify';    
+
+
 
 class EmployerPage extends React.Component {
     constructor(props) {
@@ -8,33 +13,35 @@ class EmployerPage extends React.Component {
         this.state = {show_verify: false};
         this.submit_number = this.submit_number.bind(this);
       }
-
     submit_number() {
+        if (document.getElementsByClassName("your-email")[0].value == "" ) {
+            toast.error('Error Message')
+        }
         this.setState({show_verify: true})
     }
     render() {
         return (
             <>
             <Header role="I am an employer."/>
-            <MDBContainer className="mt-5 shadow-lg py-5">
+            <MDBContainer className="mt-5 shadow-lg py-5 employer-reg-box">
                 <MDBRow>
                     <MDBCol md="6" >
                         <form className="px-4">
                             <p className="h4 text-center mb-4">Employer Register</p>
-                            <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                            <label htmlFor="defaultFormContactNameEx" className="black-text">
                                 Your name
                             </label>
-                            <input type="text" id="defaultFormContactNameEx" className="form-control" />
+                            <input type="text" className="form-control your-name" />
                             <br />
-                            <label htmlFor="defaultFormContactEmailEx" className="grey-text">
+                            <label className="black-text">
                                 Your email
                             </label>
-                            <input type="email" id="defaultFormContactEmailEx" className="form-control" />
+                            <input type="email" className="form-control  your-email" />
                             <br />
-                            <label htmlFor="defaultFormContactSubjectEx" className="grey-text">
+                            <label htmlFor="defaultFormContactSubjectEx" className="black-text">
                                 Phone number
                             </label>
-                            <input type="text" id="defaultFormContactSubjectEx" className="form-control" />
+                            <input type="text" className="form-control  your-phone" />
                             <br />
                             {/* <label htmlFor="defaultFormContactMessageEx" className="grey-text">
                                 Your message
@@ -49,10 +56,12 @@ class EmployerPage extends React.Component {
                         </form>
                     </MDBCol>
                     <MDBCol md="6" className="text-center">
-                            <img src="https://colorlib.com/etc/regform/colorlib-regform-7/images/signup-image.jpg"></img>
+                            <img src="https://colorlib.com/etc/regform/colorlib-regform-7/images/signup-image.jpg" className="employer-img"></img>
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
+            <ToastContainer />    
+
             </>
         );
     }

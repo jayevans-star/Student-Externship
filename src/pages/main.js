@@ -8,10 +8,10 @@ class MainPage extends React.Component {
             <MDBContainer className="mt-5 text-center">
               <MDBRow>
                 <MDBCol>
-                  <MDBJumbotron className="p-0">
-                    <h2 className="display-4 my-5 py-5">Welcome to Externship Finder</h2>
-                    <div className="my-5">
-                        <h2>Select account type</h2>
+                  <MDBJumbotron className="p-0 main-box">
+                    <h2 className="display-4 my-5 py-5 text-white">Welcome to Externship Finder</h2>
+                    <div className="my-5 text-white">
+                        <p className="select-font">Select account type</p>
                     </div>
                     <div className="card-group">
                         

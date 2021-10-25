@@ -2,6 +2,18 @@
     font-family: cursive;
 }
 
+.main-box {
+    background: linear-gradient(to bottom right, rgb(149, 62, 189) 0%, rgb(217, 151, 248) 100%) 100% no-repeat;
+    /* rgb(228, 181, 250); */
+    
+}
+
+.select-font {
+    font-size: xx-large;
+    font-weight: 500;
+    text-decoration: white, solid;
+
+}
 .card-img-box {
     height: 120px;
 }

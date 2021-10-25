@@ -2,7 +2,7 @@ import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBIcon} from 'mdbreact';
 import Select from 'react-select';
 // import Header from "../layout/header";
-// import '../assets/css/student-form.css'
+import '../assets/css/employer-form.css'
 const office_options = [
     { value: 'general', label: 'General Medicine' },
     { value: 'dental-1', label: 'Dental Practice' },
@@ -61,7 +61,7 @@ class EmployerFormPage extends React.Component {
         return (
             <>
             <br/><br/>
-            <MDBContainer className="mt-5 shadow-lg py-5">
+            <MDBContainer className="mt-5 shadow-lg py-5 employer-form-box">
                 <MDBRow>
                     <MDBCol md="12">
                         <p className="h4 text-center mb-4">Continue</p>

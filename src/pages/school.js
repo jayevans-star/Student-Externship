@@ -16,22 +16,22 @@ class StudentPage extends React.Component {
         return (
             <>
             <Header role="This is a school."/>
-            <MDBContainer className="mt-5 shadow-lg py-5">
+            <MDBContainer className="mt-5 shadow-lg py-5 school-reg-box">
                 <MDBRow>
                     <MDBCol md="6" >
                         <form className="px-4">
                             <p className="h4 text-center mb-4">School Register</p>
-                            <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                            <label htmlFor="defaultFormContactNameEx" className="black-text">
                                 Your name
                             </label>
                             <input type="text" id="defaultFormContactNameEx" className="form-control" />
                             <br />
-                            <label htmlFor="defaultFormContactEmailEx" className="grey-text">
+                            <label htmlFor="defaultFormContactEmailEx" className="black-text">
                                 Your email
                             </label>
                             <input type="email" id="defaultFormContactEmailEx" className="form-control" />
                             <br />
-                            <label htmlFor="defaultFormContactSubjectEx" className="grey-text">
+                            <label htmlFor="defaultFormContactSubjectEx" className="black-text">
                                 Phone number
                             </label>
                             <input type="text" id="defaultFormContactSubjectEx" className="form-control" />

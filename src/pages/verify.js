@@ -5,11 +5,11 @@ import '../assets/css/verify.css'
 class VerifyPage extends React.Component {
     render() {
         return (
-            <MDBContainer className="mt-5 text-center">
+            <MDBContainer className="mt-5 text-center verify-form-box">
               <MDBRow>
                 <MDBCol>
                   <MDBJumbotron className="p-0 verify-box">
-                    <h2 className="display-6 my-5 py-5">Verify you're a right candidate to start </h2>
+                    <h1 className="display-6 my-5 py-5 ">Verify you're a right candidate to start </h1>
                     <div className="my-5 border-bottom">
                         <h2>Verify Phone Number</h2>
                     </div>
